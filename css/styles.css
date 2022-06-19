@@ -562,11 +562,11 @@ margin-right: 30px;
     padding-left: 0;
 }
 
-.our-works-button__list .item+.item{
+.our-works-button__item+.our-works-button__item{
     margin-left: 8px;
 }
 
-.our-works-button__list .item:not(:last-child) {
+.our-works-button__item:not(:last-child) {
     margin-left: 8px;
 }
 
