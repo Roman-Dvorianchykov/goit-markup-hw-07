@@ -437,67 +437,73 @@
     <div class="backdrop is-hidden" data-modal>
            
         <form  class="modal" name="modal">
-            <h3 class="h3-modal">
+            <h3 class="modal__title">
                 Оставьте свои данные, мы вам перезвоним
             </h3>
-            <div class="close-black" data-modal-close>
-                <svg class="icon-close-black" width="17px" height="17px">
+            <div class="modal__close-button" data-modal-close>
+                <svg class="modal__icon-close-black" width="17px" height="17px">
                     <use href=".\images\symbol-defs.svg#icon-close-black">
                     </use>
                 </svg>
             </div>
-            <label for="name">
-                <span class="name-of-label">
-                Имя
-                </span>
-            </label>
-            <div class="input-modal">
-                <input type="text" id="name" class="input">
-                <svg class="modal-icon person" width="12px" height="12px">
-                    <use href=".\images\symbol-defs.svg#icon-person"></use>
-                </svg>
-            </div>
-
-            <label for="phone">
-                <span class="name-of-label">
-                Телефон
-                </span>
-            </label>
-            <div class="input-modal">
-                <input type="tel" id="phone" class="input" name="tel">
-                <svg class="modal-icon phone" width="12px" height="12px">
-                    <use href=".\images\symbol-defs.svg#icon-phone"></use>
-                </svg>
-            </div>
-
-            <label for="email">
-                <span class="name-of-label">
-                Почта
-                </span>
-            </label>
-            <div class="input-modal">   
-                <input type="email" name="email" class="input" required />
-                <svg class="modal-icon mailto2" width="12px" height="12px">
-                    <use href=".\images\symbol-defs.svg#icon-mailto2"></use>
-                </svg>
-            </div>
-
-            <label for="comment">
-                <span class="name-of-label">
+            <ul class="input__list">
+                <li class="input__item">
+                    <label for="name" class="input__label">
+                        <span class="input__title">
+                            Имя
+                        </span>
+                    </label>
+                    <div class="input__group">
+                        <input type="text" id="name" class="input__line">
+                        <svg class="modal__icon person" width="12px" height="12px">
+                            <use href=".\images\symbol-defs.svg#icon-person"></use>
+                        </svg>
+                    </div>
+                </li>
+                <li class="input__item">
+                    <label for="phone" class="input__label">
+                        <span class="input__title">
+                            Телефон
+                        </span>
+                    </label>
+                    <div class="input__group">
+                        <input type="tel" id="phone" class="input__line" name="tel">
+                        <svg class="modal__icon phone" width="12px" height="12px">
+                            <use href=".\images\symbol-defs.svg#icon-phone"></use>
+                        </svg>
+                    </div>
+                </li>
+                <li class="input__item">
+                    <label for="email" class="input__label">
+                        <span class="input__title">
+                            Почта
+                        </span>
+                    </label>
+                    <div class="input__group">
+                        <input type="email" name="email" class="input__line" required />
+                        <svg class="modal__icon mailto2" width="12px" height="12px">
+                            <use href=".\images\symbol-defs.svg#icon-mailto2"></use>
+                        </svg>
+                    </div>
+                </li>
+            </ul>
+            
+            <label for="comment" class="input__label">
+                <span class="input__title">
                 Комментарий
                 </span>
             </label>
-            <textarea  id="comment" placeholder="Введите текст" class="input comment"></textarea>
+            <textarea  id="comment" placeholder="Введите текст" class="input__line modal__comment"></textarea>
             
             
             <div class="checkbox">
-                <input class="checkbox-field" type="checkbox" name="checkbox" id="checkbox">
-                <span class="fake">
-                    <svg class="modal-icon checkmark" width="16px" height="15px">
+                <input class="checkbox__field" type="checkbox" name="checkbox" id="checkbox">
+                <span class="checkbox__fake">
+                    <svg class="modal__icon checkmark" width="16px" height="15px">
                         <use href=".\images\symbol-defs.svg#icon-checkmark"></use>
                     </svg>
                 </span>
-                <label for="checkbox" class="label-checkbox">Соглашаюсь с рассылкой и принимаю <a class="agreements-terms">Условия
+                <label for="checkbox" class="checkbox__label">Соглашаюсь с рассылкой и принимаю <a class="agreements-terms">Условия
                     договора</a>
                 </label>  
             </div>
