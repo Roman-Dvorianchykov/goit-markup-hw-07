@@ -24,7 +24,7 @@
 
 body{
     background-color: #ffffff;
-    font-family: 'Roboto', sans-serif;
+    font-family: var(--primary-text-font), sans-serif;
     color: var(--primary-text-color);
 }
 

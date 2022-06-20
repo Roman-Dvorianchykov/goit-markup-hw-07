@@ -44,7 +44,7 @@
 
 .section-text {
     color: var(--secondary-text-color);
-    font-family: 'Roboto';
+    font-family: var(--primary-text-font), sans-serif;
     font-size: 14px;
     line-height: 1.71;
     /* or 171% */

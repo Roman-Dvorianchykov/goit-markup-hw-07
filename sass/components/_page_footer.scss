@@ -35,20 +35,22 @@
     margin: 0;
     padding-left: 0;
     padding-right: 0;
+
+        &:hover,
+        &:focus {
+            color: var(--accent-color);
+        }
+    
+        &:active {
+            color: var(--primary-text-color);
+        }
 }
 
 .contacts__link.address {
     color: #ffffff;
 }
 
-.contacts__link:hover,
-.contacts__link:focus {
-    color: var(--accent-color);
-}
 
-.contacts__link:active {
-    color: var(--primary-text-color);
-}
 
 .footer__list-socials {
     margin-left: 70px;
