@@ -44,10 +44,20 @@
         &:active {
             color: var(--primary-text-color);
         }
+
+                
 }
 
 .contacts__link.address {
     color: #ffffff;
+        &:hover,
+        &:focus {
+            color: var(--accent-color);
+        }
+    
+        &:active {
+            color: var(--primary-text-color);
+        }
 }
 
 
